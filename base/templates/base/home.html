@@ -1,0 +1,262 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Merhaba, ben Onur! Java ve Python backend geliştirme alanında çalışan bir Junior Software Developer'ım. Projelerimi ve yeteneklerimi inceleyin!"
+    />
+    <meta
+      name="keywords"
+      content="Junior Software Developer, Java Developer, Python Developer, Portfolio, Onur"
+    />
+    <meta name="author" content="Onur" />
+    <meta property="og:title" content="Onur | Junior Software Developer" />
+    <meta
+      property="og:description"
+      content="Merhaba, ben Onur! Java ve Python backend geliştirme alanında çalışan bir Junior Software Developer'ım. Projelerimi ve yeteneklerimi inceleyin!"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Onur | Junior Software Developer" />
+    <meta
+      name="twitter:description"
+      content="Merhaba, ben Onur! Java ve Python backend geliştirme alanında çalışan bir Junior Software Developer'ım. Projelerimi ve yeteneklerimi inceleyin!"
+    />
+    <link
+      href="{% static '/css/main.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Onur Bircan</title>
+  </head>
+  <body>
+    <br />
+    <div class="container">
+      <!-- Profil ve Ana Bilgiler -->
+      <div class="row mb-4">
+        <div class="col-md-3">
+          <div
+            class="card card-body border-info text-center"
+            id="profile-wrapper"
+          >
+            <img id="profile-pic" src="{% static 'images/logo.gif' %}" />
+            <hr />
+            <h5>Merhaba, ben Onur!</h5>
+            <p>Junior Software Developer</p>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="card card-body border-info">
+            <h4>About Me</h4>
+            <hr />
+            <p>
+              Korkut Ata Üniversitesi Bilgisayar Programcılığı bölümünden mezun
+              oldum ve kariyerimin başında, kendimi yazılım geliştirme alanında
+              geliştirmeye odaklanmış bir Junior Software Developer'ım.
+              Özellikle Java ve Python backend web geliştirme, konusunda tutkulu
+              bir şekilde çalışıyorum. Yeni teknolojiler öğrenmekten ve çözümler
+              üretmekten büyük keyif alıyorum.
+            </p>
+            <p>
+              Sürekli kendimi geliştirmek ve profesyonel anlamda daha fazla
+              katkı sağlamak için çabalıyorum. Şu anda Django ve Spring
+              Framework üzerinde yoğunlaşıyorum. Amacım, bir ekip içinde değerli
+              bir katkı sağlamak ve yenilikçi projelerde yer alarak etkili
+              çözümler üretmektir.
+            </p>
+            <ul class="social-links d-flex list-unstyled mt-3">
+              <li class="mr-3">
+                <a href="https://www.linkedin.com/in/onurbircan-/">
+                  <img
+                    class="social"
+                    src="{% static 'images/linkedin.png' %}"
+                    alt="LinkedIn"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/onurcanbircan">
+                  <img
+                    class="social"
+                    src="{% static 'images/github.png' %}"
+                    alt="GitHub"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Bar -->
+      <div class="row mb-4">
+        <div class="col-md-12">
+          <div class="card card-body">
+            <h5>Skills</h5>
+            <hr />
+            <div id="skills-container" class="d-flex flex-wrap">
+              <div class="skill-item mb-3">
+                <span>HTML5</span>
+                <div class="progress-bar">
+                  <div
+                    class="progress"
+                    style="width: 90%"
+                    data-level="expert"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <span>CSS3</span>
+                <div class="progress-bar">
+                  <div
+                    class="progress"
+                    style="width: 80%"
+                    data-level="advanced"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <span>Java</span>
+                <div class="progress-bar">
+                  <div
+                    class="progress"
+                    style="width: 50%"
+                    data-level="intermediate"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item mb-3">
+                <span>Python</span>
+                <div class="progress-bar">
+                  <div
+                    class="progress"
+                    style="width: 55%"
+                    data-level="intermediate"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeler -->
+      <div class="row mb-4">
+        <div class="col-md-12">
+          <div class="card card-body">
+            <h5>Projects</h5>
+            <hr />
+            <div class="project mb-3">
+              <h6>1. Uzay Oyunu 🚀</h6>
+              <p>
+                Java Swing kullanılarak geliştirilmiş eğlenceli bir uzay oyunu.
+                Hareket eden düşman hedefini vurmak için uzay geminizi kontrol
+                edin ve ateş edin. Başarıyla hedefi vurduğunuzda oyun sona erer
+                ve istatistikler gösterilir.
+              </p>
+              <p>
+                GitHub Reposu:
+                <a href="https://github.com/onurcanbircan/uzay-oyunu">Click</a>
+              </p>
+              <p><strong>Technologies:</strong> Java, Swing ve Eclipse IDE</p>
+            </div>
+            <div class="project">
+              <h6>2. To-Do List Uygulaması 📒</h6>
+              <p>
+                Bu proje, Python ve Django kullanılarak geliştirilmiş bir görev
+                takip uygulamasıdır. Kullanıcılar bu uygulama sayesinde görev
+                oluşturabilir, düzenleyebilir ve silebilir. Django'nun güçlü
+                framework özellikleri sayesinde web uygulama geliştirme
+                konusundaki bilgi ve deneyiminizi pekiştirmiş olacaksınız.
+              </p>
+              <p>
+                GitHub Reposu:
+                <a href="https://github.com/onurcanbircan/django-todo-list"
+                  >Click</a
+                >
+              </p>
+              <p>
+                <strong>Technologies:</strong> Python, Django, MySQL ve HTML/CSS
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sertifikalar ve Başarılar -->
+      <div class="row mb-4">
+        <div class="col-md-12">
+          <div class="card card-body">
+            <h5>Certificates & Achievements</h5>
+            <hr />
+            <ul class="list-unstyled">
+              <li>
+                <strong
+                  >(42 Saat) Sıfırdan Komple Java Geliştirici Kursu
+                  Sertifika:</strong
+                >
+                Bu kurs sayesinde Java ile Nesne Yönelimli Programlamanın temel
+                konseptlerini öğrenerek, profesyonel seviyede uygulamalar
+                geliştirme yolunda önemli bir adım attım.
+                <a href="http://ude.my/UC-126b938a-9954-47b2-9ff1-18400b12343b/"
+                  >(Udemy)</a
+                >
+              </li>
+              <li>
+                <strong
+                  >Sıfırdan İleri Seviye Python Programlama Sertifika:</strong
+                >
+                Bu eğitim sırasında temel Python becerilerimi geliştirdim ve
+                ileri düzey konular hakkında da bilgi sahibi oldum.
+                <a
+                  href="https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=dx1hA6KxaZ"
+                  >(BTK Akademi)</a
+                >
+              </li>
+              <li>
+                <strong>Uygulamalarla SQL Öğreniyorum Sertifika:</strong>
+                Bu yolculuk boyunca, SQL dilinin temelinden başlayarak veri
+                sorgulama, veritabanı tasarımı ve ilişkisel veritabanı mantığını
+                derinlemesine öğrenme fırsatı buldum
+                <a href="http://ude.my/UC-51739b3f-2014-49ba-9b92-f37467a2c0aa/"
+                  >(Udemy)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer bg-dark text-white py-3">
+        <div class="container text-center">
+          <p>&copy; 2025 Onur Bircan | Junior Software Developer</p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/onurbircan-/"
+              target="_blank"
+              class="text-info"
+              >LinkedIn</a
+            >
+            |
+            <a
+              href="https://github.com/onurcanbircan"
+              target="_blank"
+              class="text-info"
+              >GitHub</a
+            >
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
