@@ -4,65 +4,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Merhaba, ben Onur! Java ve Python backend geliştirme alanında çalışan bir Junior Software Developer'ım. Projelerimi ve yeteneklerimi inceleyin!"
-    />
-    <meta
-      name="keywords"
-      content="Junior Software Developer, Java Developer, Python Developer, Portfolio, Onur"
-    />
-    <meta name="author" content="Onur" />
-    <meta property="og:title" content="Onur | Junior Software Developer" />
-    <meta
-      property="og:description"
-      content="Merhaba, ben Onur! Java ve Python backend geliştirme alanında çalışan bir Junior Software Developer'ım. Projelerimi ve yeteneklerimi inceleyin!"
-    />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Onur | Junior Software Developer" />
-    <meta
-      name="twitter:description"
-      content="Merhaba, ben Onur! Java ve Python backend geliştirme alanında çalışan bir Junior Software Developer'ım. Projelerimi ve yeteneklerimi inceleyin!"
-    />
+    <title>Onur Bircan | Portfolio</title>
+
+    <!-- Bootstrap 5 -->
     <link
-      href="{% static '/css/main.css' %}"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      type="text/css"
     />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <title>Onur Bircan</title>
+
+    <!-- Custom CSS -->
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" />
   </head>
+
   <body>
-    <br />
-    <div class="container">
-      <!-- Profil ve Ana Bilgiler -->
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Onur Bircan</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificates">Certificates</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
       <div class="row mb-4">
-        <div class="col-md-3">
-          <div
-            class="card card-body border-info text-center"
-            id="profile-wrapper"
-          >
-            <img id="profile-pic" src="{% static 'images/logo.gif' %}" />
-            <hr />
-            <h5>Merhaba, ben Onur!</h5>
+        <!-- Profile -->
+        <div class="col-md-3 mb-4 mb-md-0">
+          <div id="profile-wrapper">
+            <img
+              id="profile-pic"
+              src="{% static 'images/logo.gif' %}"
+              alt="Profile Picture"
+            />
+            <h5>Onur Bircan</h5>
             <p>Junior Software Developer</p>
+            <ul
+              class="social-links d-flex list-unstyled justify-content-center mt-3"
+            >
+              <li class="me-3">
+                <a href="https://www.linkedin.com/in/onurbircan-dev/">
+                  <img
+                    src="{% static 'images/linkedin.png' %}"
+                    alt="LinkedIn"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/onurcanbircan">
+                  <img src="{% static 'images/github.png' %}" alt="GitHub" />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
+
+        <!-- About -->
         <div class="col-md-9">
-          <div class="card card-body border-info">
+          <div class="card about-card p-4">
             <h4>About Me</h4>
-            <hr />
             <p>
               Korkut Ata Üniversitesi Bilgisayar Programcılığı bölümünden mezun
               oldum ve kariyerimin başında, kendimi yazılım geliştirme alanında
               geliştirmeye odaklanmış bir Junior Software Developer'ım.
-              Özellikle Java ve Python backend web geliştirme, konusunda tutkulu
+              Özellikle Java ve Python backend web geliştirme konusunda tutkulu
               bir şekilde çalışıyorum. Yeni teknolojiler öğrenmekten ve çözümler
               üretmekten büyük keyif alıyorum.
             </p>
@@ -73,190 +108,167 @@
               bir katkı sağlamak ve yenilikçi projelerde yer alarak etkili
               çözümler üretmektir.
             </p>
-            <ul class="social-links d-flex list-unstyled mt-3">
-              <li class="mr-3">
-                <a href="https://www.linkedin.com/in/onurbircan-/">
-                  <img
-                    class="social"
-                    src="{% static 'images/linkedin.png' %}"
-                    alt="LinkedIn"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/onurcanbircan">
-                  <img
-                    class="social"
-                    src="{% static 'images/github.png' %}"
-                    alt="GitHub"
-                  />
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
 
-      <!-- Skills Bar -->
-      <div class="row mb-4">
-        <div class="col-md-12">
-          <div class="card card-body">
-            <h5>Skills</h5>
-            <hr />
-            <div id="skills-container" class="d-flex flex-wrap">
-              <div class="skill-item mb-3">
-                <span>HTML5</span>
-                <div class="progress-bar">
-                  <div
-                    class="progress"
-                    style="width: 90%"
-                    data-level="expert"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill-item mb-3">
-                <span>CSS3</span>
-                <div class="progress-bar">
-                  <div
-                    class="progress"
-                    style="width: 80%"
-                    data-level="advanced"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill-item mb-3">
-                <span>Java</span>
-                <div class="progress-bar">
-                  <div
-                    class="progress"
-                    style="width: 50%"
-                    data-level="intermediate"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill-item mb-3">
-                <span>Python</span>
-                <div class="progress-bar">
-                  <div
-                    class="progress"
-                    style="width: 55%"
-                    data-level="intermediate"
-                  ></div>
-                </div>
-              </div>
+      <!-- SKILLS -->
+      <div class="card p-4 shadow mb-5" id="skills">
+        <h4 class="mb-3">Skills</h4>
+        <hr />
+        <div class="row text-center">
+          <div class="col-6 col-md-3 mb-4">
+            <div class="skill-item html">
+              <i class="fa-brands fa-html5"></i>
+              <p>HTML5</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="skill-item css">
+              <i class="fa-brands fa-css3-alt"></i>
+              <p>CSS3</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="skill-item java">
+              <i class="fa-brands fa-java"></i>
+              <p>Java</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="skill-item python">
+              <i class="fa-brands fa-python"></i>
+              <p>Python</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="skill-item django">
+              <i class="fa-solid fa-leaf"></i>
+              <p>Django</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="skill-item bootstrap">
+              <i class="fa-brands fa-bootstrap"></i>
+              <p>Bootstrap5</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="skill-item git">
+              <i class="fa-brands fa-git-alt"></i>
+              <p>Git</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="skill-item mysql">
+              <i class="fa-solid fa-database"></i>
+              <p>MySQL</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Projeler -->
-      <div class="row mb-4">
-        <div class="col-md-12">
-          <div class="card card-body">
-            <h5>Projects</h5>
-            <hr />
-            <div class="project mb-3">
-              <h6>1. Uzay Oyunu 🚀</h6>
-              <p>
-                Java Swing kullanılarak geliştirilmiş eğlenceli bir uzay oyunu.
-                Hareket eden düşman hedefini vurmak için uzay geminizi kontrol
-                edin ve ateş edin. Başarıyla hedefi vurduğunuzda oyun sona erer
-                ve istatistikler gösterilir.
-              </p>
-              <p>
-                GitHub Reposu:
-                <a href="https://github.com/onurcanbircan/uzay-oyunu">Click</a>
-              </p>
-              <p><strong>Technologies:</strong> Java, Swing ve Eclipse IDE</p>
-            </div>
-            <div class="project">
-              <h6>2. To-Do List Uygulaması 📒</h6>
-              <p>
-                Bu proje, Python ve Django kullanılarak geliştirilmiş bir görev
-                takip uygulamasıdır. Kullanıcılar bu uygulama sayesinde görev
-                oluşturabilir, düzenleyebilir ve silebilir. Django'nun güçlü
-                framework özellikleri sayesinde web uygulama geliştirme
-                konusundaki bilgi ve deneyiminizi pekiştirmiş olacaksınız.
-              </p>
-              <p>
-                GitHub Reposu:
-                <a href="https://github.com/onurcanbircan/django-todo-list"
-                  >Click</a
-                >
-              </p>
-              <p>
-                <strong>Technologies:</strong> Python, Django, MySQL ve HTML/CSS
-              </p>
-            </div>
-          </div>
+      <!-- PROJECTS -->
+      <div class="card p-4 shadow mb-5" id="projects">
+        <h4>Projects</h4>
+        <hr />
+        <div class="p-3 mb-4 bg-white shadow-sm project-card">
+          <h5>
+            <i class="fa-solid fa-rocket text-primary me-2"></i> Uzay Oyunu
+          </h5>
+          <p>Java Swing ile geliştirilmiş bir arcade oyunu.</p>
+          <a
+            href="https://github.com/onurcanbircan/uzay-oyunu"
+            target="_blank"
+            class="btn btn-primary btn-sm"
+          >
+            <i class="fa-brands fa-github me-1"></i> GitHub Repo
+          </a>
+        </div>
+        <div class="p-3 bg-white shadow-sm project-card">
+          <h5>
+            <i class="fa-solid fa-list-check text-primary me-2"></i> Django
+            To-Do List
+          </h5>
+          <p>Python & Django ile geliştirilmiş bir görev takip uygulaması.</p>
+          <a
+            href="https://github.com/onurcanbircan/django-todo-list"
+            target="_blank"
+            class="btn btn-primary btn-sm"
+          >
+            <i class="fa-brands fa-github me-1"></i> GitHub Repo
+          </a>
         </div>
       </div>
 
-      <!-- Sertifikalar ve Başarılar -->
-      <div class="row mb-4">
-        <div class="col-md-12">
-          <div class="card card-body">
-            <h5>Certificates & Achievements</h5>
-            <hr />
-            <ul class="list-unstyled">
-              <li>
-                <strong
-                  >(42 Saat) Sıfırdan Komple Java Geliştirici Kursu
-                  Sertifika:</strong
-                >
-                Bu kurs sayesinde Java ile Nesne Yönelimli Programlamanın temel
-                konseptlerini öğrenerek, profesyonel seviyede uygulamalar
-                geliştirme yolunda önemli bir adım attım.
-                <a href="http://ude.my/UC-126b938a-9954-47b2-9ff1-18400b12343b/"
-                  >(Udemy)</a
-                >
-              </li>
-              <li>
-                <strong
-                  >Sıfırdan İleri Seviye Python Programlama Sertifika:</strong
-                >
-                Bu eğitim sırasında temel Python becerilerimi geliştirdim ve
-                ileri düzey konular hakkında da bilgi sahibi oldum.
-                <a
-                  href="https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=dx1hA6KxaZ"
-                  >(BTK Akademi)</a
-                >
-              </li>
-              <li>
-                <strong>Uygulamalarla SQL Öğreniyorum Sertifika:</strong>
-                Bu yolculuk boyunca, SQL dilinin temelinden başlayarak veri
-                sorgulama, veritabanı tasarımı ve ilişkisel veritabanı mantığını
-                derinlemesine öğrenme fırsatı buldum
-                <a href="http://ude.my/UC-51739b3f-2014-49ba-9b92-f37467a2c0aa/"
-                  >(Udemy)</a
-                >
-              </li>
-            </ul>
+      <!-- CERTIFICATES -->
+      <div class="card p-4 shadow mb-5" id="certificates">
+        <h4>Certificates & Achievements</h4>
+        <hr />
+        <div class="d-flex mb-4 certificate-card">
+          <i class="fa-solid fa-award certificate-icon"></i>
+          <div>
+            <p class="certificate-title">
+              (42 Saat) Sıfırdan Komple Java Geliştirici Kursu
+            </p>
+            <p class="mb-1 text-muted">
+              Java OOP, class yapıları, GUI projeleri, algoritmalar.
+            </p>
+            <p class="certificate-link">
+              <a
+                href="http://ude.my/UC-126b938a-9954-47b2-9ff1-18400b12343b/"
+                target="_blank"
+                >Sertifikayı Gör</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex mb-4 certificate-card">
+          <i class="fa-solid fa-certificate certificate-icon text-success"></i>
+          <div>
+            <p class="certificate-title">
+              Sıfırdan İleri Seviye Python Programlama
+            </p>
+            <p class="mb-1 text-muted">
+              OOP, ileri fonksiyonlar, modüller, proje geliştirme.
+            </p>
+            <p class="certificate-link">
+              <a
+                href="https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=dx1hA6KxaZ"
+                target="_blank"
+                >Sertifikayı Gör</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex mb-4 certificate-card">
+          <i class="fa-solid fa-database certificate-icon text-warning"></i>
+          <div>
+            <p class="certificate-title">Uygulamalarla SQL Öğreniyorum</p>
+            <p class="mb-1 text-muted">
+              Veritabanı tasarımı, JOIN yapıları, veri manipülasyonu.
+            </p>
+            <p class="certificate-link">
+              <a
+                href="http://ude.my/UC-51739b3f-2014-49ba-9b92-f37467a2c0aa/"
+                target="_blank"
+                >Sertifikayı Gör</a
+              >
+            </p>
           </div>
         </div>
       </div>
-
-      <!-- Footer -->
-      <footer class="footer bg-dark text-white py-3">
-        <div class="container text-center">
-          <p>&copy; 2025 Onur Bircan | Junior Software Developer</p>
-          <p>
-            <a
-              href="https://www.linkedin.com/in/onurbircan-/"
-              target="_blank"
-              class="text-info"
-              >LinkedIn</a
-            >
-            |
-            <a
-              href="https://github.com/onurcanbircan"
-              target="_blank"
-              class="text-info"
-              >GitHub</a
-            >
-          </p>
-        </div>
-      </footer>
     </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-3 mt-4">
+      <div class="container text-center">
+        <p>&copy; 2025 Onur Bircan | Junior Software Developer</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
