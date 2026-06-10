@@ -1,31 +1,30 @@
-# Onur's Portfolio Website 🌟
+# 🌐 Professional Developer Portfolio Website
 
-Welcome to my first portfolio website repository! This project is a showcase of my skills and passion for web development, created using **Python**, **Django**, **HTML5**, **CSS3**, and **Bootstrap**.
+Welcome to my personal portfolio repository! This web application is engineered using **Django (Python)** to serve as a fast, secure, and SEO-optimized platform to showcase my software engineering journey, technical competencies, and production-ready projects.
 
-## 🌟 About the Project
+---
 
-This portfolio is designed to provide a professional and creative platform where I can present:
-- My career journey and personal story.
-- Key skills and competencies in software development.
-- Projects I have worked on, including:
-  - **Space Game:** A fun Java Swing game where you control a spaceship to shoot moving targets.
-  - **To-Do List Application:** A task management tool built using Python and Django.
-- Certificates and achievements that highlight my continuous learning.
+## 🎯 Key Features & Modules
 
-## 🛠️ Technologies Used
+- 👨‍💻 **Dynamic Portfolio Showcase:** Centralized project hub demonstrating full-stack and game development achievements.
+- 📜 **Interactive CV & Timeline:** Elegant visual layout displaying education milestones and technical skills.
+- 📥 **Contact & Leads System:** Form structure ready to receive professional inquiries.
+- 📱 **Mobile-First Design:** Fully responsive layout utilizing modern Bootstrap components.
+- 🔍 **SEO Optimized:** Structured semantic HTML5 elements and meta tags for high search engine visibility.
 
-- **Backend:** Python (Django Framework)  
-- **Frontend:** HTML5, CSS3, Bootstrap
+## 🛠️ Tech Stack
 
-## 🎯 Features
+- **Backend Architecture:** Python, Django Web Framework (MVC Pattern)
+- **Frontend Layer:** HTML5, CSS3, JavaScript, Bootstrap 5
+- **Assets & Styling:** Clean layouts, custom typography, and optimized asset loading.
 
-- Responsive design for seamless user experience on all devices.
-- Project showcase with detailed descriptions and technologies used.
-- SEO-optimized meta tags for better visibility across search engines.
+---
 
-## 🚀 How to Run the Project
+## 🚀 Installation & Deployment Guide
 
-To clone and run this project locally, follow these steps:
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/onurcanbircan/django-portfolio.git
+To explore this project locally, execute the following commands in your terminal:
+
+### 1. Clone the Project
+```bash
+git clone [https://github.com/onurcanbircan/django-portfolio.git](https://github.com/onurcanbircan/django-portfolio.git)
+cd django-portfolio
